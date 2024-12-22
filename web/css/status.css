@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --primary-color: #42200b;
+    --background-color: #ffd54f;
+    --text-color: #212121;
+    --input-background: rgba(255, 255, 255, 0.8);
+    --button-background: #ff5722;
+    --button-text-color: #ffffff;
+    --tertiary-color: #df1c1c;
+    --secondary-color: #ffc135;
+    --tertiary-color: #df1c1c;
+    --text-dark: #212529;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --header-font-1: "Alfa Slab One", serif;
+    --header-font-2: "Bebas Neue", sans-serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../img/header-bg.png') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--primary-color);
+}
+
+nav {
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: var(--header-background);
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo img {
+    max-width: var(--logo-max-width);
+    margin-top: 20px; /* Added margin-top */
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav__links li {
+    display: inline;
+}
+
+.nav__links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; /* Adjusted to match the image */
+    transition: color 0.3s;
+}
+
+.nav__links a:hover {
+    color: var(--link-hover-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.content-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.admin-main h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-left: 20px;
+    display: flex;
+    padding-left: 17px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--button-background);
+    color: var(--button-text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    width: 300px;
+    margin-top: -40px;
+    margin-left: 30px;
+}
+
+button:hover {
+    background: darken(var(--button-background), 10%);
+}
+
+.footer {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: var(--text-color);
+}
+
+.footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.feedback-textarea {
+    width: 500px;
+    height: 150px;
+    padding: 10px;
+/*    margin-top: 10px;*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 33px;
+    background: var(--input-background);
+    font-size: 1rem;
+}
+
+.table-textarea {
+    width: 300px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 33px;
+    background: var(--input-background);
+    font-size: 1rem;
+}
+
+.cs-btn{
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--button-background);
+    color: var(--button-text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    width: 300px;
+    margin-top: -57px;
+    margin-left: 30px;
+}
+
+.admin-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin-top: 5rem;
+}

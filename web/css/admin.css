@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+   --primary-color: #007BFF; /* Màu xanh nước biển */
+    --secondary-color: #D1E8FF; /* Màu xanh nhạt hơn */
+    --background-color: #F4F4F4; /* Màu nền sáng */
+    --text-dark: #212529;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --header-font-1: "Alfa Slab One", serif;
+    --header-font-2: "Bebas Neue", sans-serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+/*    background-image: url("../img/header-bg.png");*/
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.admin-header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    color: var(--white);
+    font-family: var(--header-font-1);
+}
+
+.admin-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.admin-nav__logo img {
+    max-width: 150px;
+}
+
+.admin-nav__links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.admin-nav__links li {
+    display: inline;
+}
+
+.admin-nav__links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.admin-nav__links a:hover {
+    color: var(--secondary-color);
+}
+
+.admin-main {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;   
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table th, table td {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+table td {
+    background-color: var(--white);
+}
+
+.admin-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin-top: 2rem;
+}
+
+
